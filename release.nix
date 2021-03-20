@@ -220,7 +220,10 @@ in
     grpc-haskell-linux         =  linuxPkgs.haskellPackages.grpc-haskell;
     grpc-haskell-darwin        = darwinPkgs.haskellPackages.grpc-haskell;
     grpc-haskell               =       pkgs.haskellPackages.grpc-haskell;
-    grpc-haskell-no-tests      =       pkgs.haskellPackages.grpc-haskell-no-tests;
+
+    grpc-haskell-no-tests-linux  =  linuxPkgs.haskellPackages.grpc-haskell-no-tests;
+    grpc-haskell-no-tests-darwin = darwinPkgs.haskellPackages.grpc-haskell-no-tests;
+    grpc-haskell-no-tests        =       pkgs.haskellPackages.grpc-haskell-no-tests;
 
     grpc-linux                 =  linuxPkgs.grpc;
     grpc-darwin                = darwinPkgs.grpc;
