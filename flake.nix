@@ -1,11 +1,11 @@
 {
   description = "A very basic flake";
 
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/dd9f73e7d34486b09b966738ace161e621a0480b";
-  };
+#  inputs = {
+#    nixpkgs.url = "github:NixOS/nixpkgs/dd9f73e7d34486b09b966738ace161e621a0480b";
+#  };
 
-  outputs = { self, nixpkgs }:
+  outputs = { self }:
     let
       grpc-haskell-attrs = (import ./release.nix);
     in
